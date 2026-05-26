@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica Neue', sans-serif; /* Limpia y moderna para lectura */
+    background-color: #fafafa;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.main-header {
+    background-color: #111111;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(197, 168, 128, 0.2);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo img {
+    height: 50px; 
+    width: auto;
+    display: block;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #c5a880; 
+}
+
+.recipes-container {
+    max-width: 800px; /* Ancho elegante para que todo quede en eje central */
+    margin: 100px auto 60px auto; /* Compensa la barra fija de arriba */
+    padding: 0 20px;
+}
+
+.hero-premium {
+    text-align: center;
+    margin-bottom: 80px;
+    padding: 40px 0;
+}
+
+.hero-image-wrapper {
+    margin-bottom: 30px;
+}
+
+.hero-premium img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    filter: brightness(90%);
+}
+
+.hero-premium h2 {
+    font-family: 'Georgia', 'Times New Roman', serif; /* Serif elegante nativa */
+    font-size: 2.8rem;
+    color: #111111;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.hero-premium p {
+    font-size: 1rem;
+    color: #666666;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.recipe-section {
+    margin-bottom: 80px;
+    padding-top: 20px;
+}
+
+.category {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #c5a880;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.recipe-section h1 {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 2.2rem;
+    color: #111111;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+/* Bloques contenedores (Imágenes y Detalles) */
+.image-wrapper {
+    margin-bottom: 35px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.recipe-details {
+    margin-bottom: 30px;
+}
+
+.recipe-details h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111111;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 5px;
+}
+
+/* Listas ordenadas y desordenadas internas */
+.recipe-details ul, 
+.recipe-details ol {
+    padding-left: 20px;
+    color: #444444;
+    font-size: 0.95rem;
+}
+
+.recipe-details li {
+    margin-bottom: 8px;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto panorámica 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Línea divisoria elegante */
+.divider {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(197, 168, 128, 0.4), transparent);
+    margin: 60px 0;
+}
+
+.main-footer {
+    background-color: #111111;
+    color: #777777;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    border-top: 1px solid rgba(197, 168, 128, 0.1);
+}
+
+.footer-social {
+    font-size: 0.75rem;
+    margin-top: 10px;
+    color: #c5a880;
+}
